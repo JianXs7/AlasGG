@@ -292,9 +292,7 @@ class GGHandler:
         ]
         _group_raid = [
             'raid',
-            'raid_daily',
-            'coalition',
-            'coalition_sp'
+            'raid_daily'
         ]
         _group_personal_choice = [
             'guild'
@@ -329,6 +327,8 @@ class GGHandler:
             'c72_mystery_farming',
             'c122_medium_leveling',
             'c124_large_leveling',
+            'coalition',
+            'coalition_sp',
         ]
 
         # Handle ignorance

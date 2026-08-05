@@ -1,8 +1,6 @@
 version: "1"
 rules:
   - base: master
-    upstream: LmeSzinc:master
+    upstream: LmeSzinc/AzurLaneAutoScript
     mergeMethod: merge
-    mergeUnstable: true
-label: ":arrow_heading_down: pull"
-conflictLabel: "merge-conflict": true
+    mergeUnstable: false

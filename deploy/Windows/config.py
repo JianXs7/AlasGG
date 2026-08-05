@@ -157,7 +157,7 @@ class DeployConfig(ConfigModel):
 
     @cached_property
     def git(self) -> str:
-        exe = self.filepath('GitExecutable')
+        exe = self.filepath(self.GitExecutable)
         if os.path.exists(exe):
             return exe
 

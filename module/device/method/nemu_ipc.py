@@ -228,7 +228,7 @@ class NemuIpcImpl:
             # MuMuPlayer12 6.0
             os.path.abspath(os.path.join(nemu_folder, './nx_main/sdk/external_renderer_ipc.dll')),
         ]
-        ipc_dll = ''
+        self.lib = None
         for ipc_dll in list_dll:
             if not os.path.exists(ipc_dll):
                 continue
@@ -239,7 +239,7 @@ class NemuIpcImpl:
                 logger.error(e)
                 logger.error(f'ipc_dll={ipc_dll} exists, but cannot be loaded')
                 continue
-        if not ipc_dll:
+        if self.lib is None:
             # not found
             raise NemuIpcIncompatible(
                 f'NemuIpc requires MuMu12 version >= 3.8.13, please check your version. '
@@ -489,7 +489,7 @@ class NemuIpc(Platform):
                         instance_id=index,
                         display_id=0
                     ).__enter__()
-                except (NemuIpcIncompatible, NemuIpcError) as e:
+                except (NemuIpcIncompatible, NemuIpcError, JobTimeout) as e:
                     logger.error(e)
                     logger.error('Emulator info incorrect')
 

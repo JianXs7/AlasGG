@@ -151,6 +151,7 @@ class GeneratedConfig:
     GemsFarming_ChangeFlagship = 'ship'  # ship, ship_equip
     GemsFarming_CommonCV = 'any'  # any, langley, bogue, ranger, hermes
     GemsFarming_ChangeVanguard = 'ship'  # disabled, ship, ship_equip
+    GemsFarming_ALLowLowVanguardLevel = True
     GemsFarming_CommonDD = 'any'  # any, favourite, aulick_or_foote, cassin_or_downes, z20_or_z21
     GemsFarming_CommissionLimit = True
 
@@ -180,9 +181,6 @@ class GeneratedConfig:
 
     # Group `Hospital`
     Hospital_UseRecommendFleet = True
-
-    # Group `MaritimeEscort`
-    MaritimeEscort_Enable = True
 
     # Group `Coalition`
     Coalition_Mode = 'hard'  # easy, normal, hard, sp
@@ -368,7 +366,6 @@ class GeneratedConfig:
     Hard_HardFleet = 1  # 1, 2
 
     # Group `Exercise`
-    Exercise_DelayUntilHoursBeforeNextUpdate = 12  # 1, 2, 3, 4, 5, 12
     Exercise_OpponentChooseMode = 'max_exp'  # max_exp, easiest, leftmost, easiest_else_exp
     Exercise_OpponentTrial = 1
     Exercise_ExerciseStrategy = 'aggressive'  # aggressive, fri18, sat0, sat12, sat18, sun0, sun12, sun18
@@ -403,7 +400,6 @@ class GeneratedConfig:
 
     # Group `OpsiFleet`
     OpsiFleet_Fleet = 1  # 1, 2, 3, 4
-    OpsiFleet_FleetMode = 'combat_auto'  # combat_auto, combat_manual, stand_still_in_the_middle, hide_in_bottom_left
     OpsiFleet_Submarine = False
 
     # Group `OpsiExplore`
@@ -413,7 +409,7 @@ class GeneratedConfig:
 
     # Group `OpsiShop`
     OpsiShop_PresetFilter = 'max_benefit_meta'  # max_benefit, max_benefit_meta, no_meta, all, custom
-    OpsiShop_CustomFilter = 'LoggerAbyssalT6 > LoggerAbyssalT5 > LoggerObscure > LoggerAbyssalT4 > ActionPoint > PurpleCoins\n> GearDesignPlanT3 > PlateRandomT4 > DevelopmentMaterialT3 > GearDesignPlanT2 > GearPart\n> OrdnanceTestingReportT3 > OrdnanceTestingReportT2 > DevelopmentMaterialT2 > OrdnanceTestingReportT1\n> METARedBook > CrystallizedHeatResistantSteel > NanoceramicAlloy > NeuroplasticProstheticArm > SupercavitationGenerator'
+    OpsiShop_CustomFilter = 'LoggerAbyssalT6 > LoggerAbyssalT5 > LoggerAbyssalT4 > LoggerObscureT6 > LoggerObscureT5 > LoggerObscureT4 > LoggerObscureT3 > ActionPoint > PurpleCoins\n> GearDesignPlanT3 > PlateRandomT4 > DevelopmentMaterialT3 > GearDesignPlanT2 > GearPart\n> OrdnanceTestingReportT3 > OrdnanceTestingReportT2 > DevelopmentMaterialT2 > OrdnanceTestingReportT1\n> METARedBook > CrystallizedHeatResistantSteel > NanoceramicAlloy > NeuroplasticProstheticArm > SupercavitationGenerator'
 
     # Group `OpsiVoucher`
     OpsiVoucher_Filter = 'LoggerAbyssal > LoggerObscure > Book > Coin > Fragment'
@@ -474,75 +470,15 @@ class GeneratedConfig:
     GGHandler_RepushLua = True
     GGHandler_GGMultiplyingFactor = 200
     GGHandler_Timeout = 120
-    GGHandler_DisabledTask = 'disable_all_dangerous_task'  # disable_all_dangerous_task, disable_guild_and_dangerous, disable_exercise, enable_all
+    GGHandler_DisabledTask = 'disable_all_dangerous_task'  # disable_all_dangerous_task, disable_guild_and_dangerous, disable_meta_and_exercise, disable_exercise, enable_all
 
     # Group `PowerLimit`
     PowerLimit_Exercise = 16500
     PowerLimit_Raid = 16500
     PowerLimit_Ash = 16500
 
-    # Group `Oil`
-    Oil_Value = 0
-    Oil_Limit = 0
-    Oil_Color = '^000000'
-    Oil_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `Coin`
-    Coin_Value = 0
-    Coin_Limit = 0
-    Coin_Color = '^000000'
-    Coin_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `Gem`
-    Gem_Value = 0
-    Gem_Color = '^000000'
-    Gem_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `Pt`
-    Pt_Value = 0
-    Pt_Color = '^000000'
-    Pt_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `YellowCoin`
-    YellowCoin_Value = 0
-    YellowCoin_Color = '^000000'
-    YellowCoin_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `PurpleCoin`
-    PurpleCoin_Value = 0
-    PurpleCoin_Color = '^000000'
-    PurpleCoin_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `ActionPoint`
-    ActionPoint_Value = 0
-    ActionPoint_Total = 0
-    ActionPoint_Color = '^000000'
-    ActionPoint_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `Merit`
-    Merit_Value = 0
-    Merit_Color = '^000000'
-    Merit_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `Cube`
-    Cube_Value = 0
-    Cube_Color = '^000000'
-    Cube_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `Core`
-    Core_Value = 0
-    Core_Color = '^000000'
-    Core_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `Medal`
-    Medal_Value = 0
-    Medal_Color = '^000000'
-    Medal_Record = datetime.datetime(2020, 1, 1, 0, 0)
-
-    # Group `GuildCoin`
-    GuildCoin_Value = 0
-    GuildCoin_Color = '^000000'
-    GuildCoin_Record = datetime.datetime(2020, 1, 1, 0, 0)
+    # Group `DontOpen`
+    DontOpen_NoItOpened = 0
 
     # Group `Storage`
     Storage_Storage = {}

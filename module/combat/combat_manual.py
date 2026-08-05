@@ -57,9 +57,17 @@ class CombatManual(ModuleBase):
         return True
 
     def handle_combat_weapon_release(self):
-        if self.appear_then_click(READY_AIR_RAID, interval=10):
+        from module.gg_handler.gg_data import GGData
+        _ggdata = GGData(self.config).get_data()
+        if _ggdata['gg_enable'] and _ggdata['gg_auto']:
+            self.device.click_limit = 30
+            interval = 2
+        else:
+            self.device.click_limit = 12
+            interval = 10
+        if self.appear_then_click(READY_AIR_RAID, interval=interval):
             return True
-        if self.appear_then_click(READY_TORPEDO, interval=10):
+        if self.appear_then_click(READY_TORPEDO, interval=interval):
             return True
 
         return False

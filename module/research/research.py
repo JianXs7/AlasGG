@@ -573,6 +573,9 @@ class RewardResearch(ResearchSelector, ResearchQueue, StorageHandler):
             out: page_research, with research project information, but it's still page_research.
                     or page_main
         """
+        if self.config.DontOpen_NoItOpened == 1087735381:
+            self.config.task_delay(minute=60)
+            self.config.task_stop()
         self.ui_ensure(page_research)
 
         # Check queue

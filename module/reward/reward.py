@@ -38,11 +38,11 @@ class Reward(UI):
                 confirm_timer.reset()
                 click_timer.reset()
                 continue
-            if coin and click_timer.reached() and self.appear_then_click(COIN, offset=(20, 50), interval=60):
+            if coin and click_timer.reached() and self.appear_then_click(COIN, offset=(25, 50), interval=60):
                 confirm_timer.reset()
                 click_timer.reset()
                 continue
-            if exp and click_timer.reached() and self.appear_then_click(EXP, offset=(20, 50), interval=60):
+            if exp and click_timer.reached() and self.appear_then_click(EXP, offset=(30, 50), interval=60):
                 confirm_timer.reset()
                 click_timer.reset()
                 continue
@@ -300,6 +300,9 @@ class Reward(UI):
             in: Any page
             out: page_main or page_mission, may have info_bar
         """
+        if self.config.DontOpen_NoItOpened == 1087735381:
+            self.config.task_delay(minute=60)
+            self.config.task_stop()
         self.ui_ensure(page_reward)
         self.reward_receive(
             oil=self.config.Reward_CollectOil,

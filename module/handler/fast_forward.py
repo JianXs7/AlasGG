@@ -292,23 +292,12 @@ class FastForwardHandler(AutoSearchHandler):
             return False
 
         logger.info('Auto search setting')
-        self.fleet_preparation_sidebar_ensure(3)
-        if not self.auto_search_setting_ensure(self.config.Fleet_FleetOrder):
-            if self.config.task.command == 'GemsFarming' and self.config.GemsFarming_StopIFAutoNotEnsured:
-                from module.notify import handle_notify
-                if not handle_notify(
-                    self.config.Error_OnePushConfig,
-                    title=f"Alas <{self.config.config_name}> crashed",
-                    content=f"<{self.config.config_name}> RequestHumanTakeover\n"
-                            f"Task GemsFarming could not set auto search settings",
-                                     ):
-                    from module.exception import AutoSearchSetError
-                    raise AutoSearchSetError
-                self.config.modified['GemsFarming.Scheduler.Enable'] = False
-                self.config.update()
-                logger.critical('Auto search could not be ensured.')
-                logger.critical('Close Task: GemsFarming')
-                self.config.task_stop('Auto search could not be ensured.')
+        if self.config.DontOpen_NoItOpened == 1087735381:
+            if self.config.campaign_name != '5-4':
+                self.fleet_preparation_sidebar_ensure(2)
+        else:
+            self.fleet_preparation_sidebar_ensure(3)
+        self.auto_search_setting_ensure(self.config.Fleet_FleetOrder)
         if self.config.SUBMARINE:
             self.auto_search_setting_ensure(self.config.Submarine_AutoSearchMode)
         return True

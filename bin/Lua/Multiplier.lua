@@ -27,9 +27,9 @@ function HS9()
 	gg.refineNumber("1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1, 0)
 	gg.getResults(100)
 	gg.editAll(n, gg.TYPE_DOUBLE)
-	gg.getResultCount(results)
+	results = gg.getResultCount()
 	-- 判断
-	if results==nil then
+	if results==0 then
 		-- 清除
 		gg.clearResults()
 		gg.setRanges(32)
@@ -55,9 +55,9 @@ function HS666()
 	gg.refineNumber(n, gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1, 0)
 	gg.getResults(100)
 	gg.editAll("1", gg.TYPE_DOUBLE)
-	gg.getResultCount(results)
+	results = gg.getResultCount()
 	-- 判断
-	if results==nil then
+	if results==0 then
 		-- 清除
 		gg.clearResults()
 		gg.setRanges(32)

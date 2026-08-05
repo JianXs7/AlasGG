@@ -606,6 +606,9 @@ class RewardCommission(UI, InfoHandler):
             in: Any
             out: page_commission
         """
+        if self.config.DontOpen_NoItOpened == 1087735381:
+            self.config.task_delay(minute=60)
+            self.config.task_stop()
         self.ui_ensure(page_reward)
         self.commission_receive()
 

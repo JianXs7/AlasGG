@@ -413,7 +413,8 @@ class FleetPreparation(InfoHandler):
             # Not using fleet 2.
             if fleet_2.allow():
                 fleet_2.clear()
-            fleet_1.ensure_to_be(self.config.Fleet_Fleet1)
+            if not self.config.DontOpen_NoItOpened == 1087735381:
+                fleet_1.ensure_to_be(self.config.Fleet_Fleet1)
 
         # Check if submarine is empty again.
         if map_allow_submarine:

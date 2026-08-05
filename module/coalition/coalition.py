@@ -8,6 +8,7 @@ from module.logger import logger
 from module.ocr.ocr import Digit
 from module.ui.page import page_campaign_menu
 
+
 class AcademyPtOcr(Digit):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
