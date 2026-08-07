@@ -1220,8 +1220,8 @@
       "ship_equip": "ship_equip"
     },
     "ALLowLowVanguardLevel": {
-      "name": "GemsFarming.ALLowLowVanguardLevel.name",
-      "help": "GemsFarming.ALLowLowVanguardLevel.help"
+      "name": "低レベル前衛を許可",
+      "help": "倍率ON時、前衛のレベル制限を10以上に緩和します。ハードモード（CDマップ等）では49になります。"
     },
     "CommonDD": {
       "name": "GemsFarming.CommonDD.name",

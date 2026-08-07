@@ -685,7 +685,7 @@
       "coalition_20250626": "迷彩都市的尋蹤者",
       "coalition_20251120": "DATE A LANE",
       "coalition_20260122": "光影風尚-拍攝進行時",
-      "coalition_20260723": "Authentic Horror Story",
+      "coalition_20260723": "怪談紀實",
       "event_20200227_cn": "Northern Overture",
       "event_20200312_cn": "斯圖爾特的硝煙",
       "event_20200326_cn": "Microlayer Medley",
@@ -1220,8 +1220,8 @@
       "ship_equip": "更換艦船 + 裝備"
     },
     "ALLowLowVanguardLevel": {
-      "name": "GemsFarming.ALLowLowVanguardLevel.name",
-      "help": "GemsFarming.ALLowLowVanguardLevel.help"
+      "name": "可更換低等級前排",
+      "help": "倍率開啟時，前排等級限制改為10以上即可。若為困難模式（如CD圖）改為49級。"
     },
     "CommonDD": {
       "name": "指定前排",

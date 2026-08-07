@@ -1220,8 +1220,8 @@
       "ship_equip": "更换舰船 + 装备"
     },
     "ALLowLowVanguardLevel": {
-      "name": "GemsFarming.ALLowLowVanguardLevel.name",
-      "help": "GemsFarming.ALLowLowVanguardLevel.help"
+      "name": "可更换低等级前排",
+      "help": "倍率打开时，前排等级限制改为10以上即可。若为困难模式（如CD图）改为49级。"
     },
     "CommonDD": {
       "name": "指定前排",

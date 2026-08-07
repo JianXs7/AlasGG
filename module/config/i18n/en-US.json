@@ -1220,8 +1220,8 @@
       "ship_equip": "Change Ship + Gears"
     },
     "ALLowLowVanguardLevel": {
-      "name": "GemsFarming.ALLowLowVanguardLevel.name",
-      "help": "GemsFarming.ALLowLowVanguardLevel.help"
+      "name": "Allow low-level vanguard",
+      "help": "When multiplier is on, lower the vanguard level limit to 10. For hard mode (e.g. CD maps), 49."
     },
     "CommonDD": {
       "name": "Flagship Common DD Preference",
