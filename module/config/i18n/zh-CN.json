@@ -2685,7 +2685,7 @@
     },
     "RestartEverytime": {
       "name": "每次启动Alas时重启",
-      "help": "打开以初始化倍率属性。如果你没有手动操作的坏习惯，可以关闭此选项。\n但是有坏习惯的人太多了，于是强制打开。"
+      "help": "启动 Alas 时重启 GG 并重置倍率。"
     },
     "RepushLua": {
       "name": "重新推送Lua",
@@ -2729,12 +2729,12 @@
   },
   "DontOpen": {
     "_info": {
-      "name": "DontOpen._info.name",
-      "help": "DontOpen._info.help"
+      "name": "经验+3",
+      "help": ""
     },
     "NoItOpened": {
-      "name": "DontOpen.NoItOpened.name",
-      "help": "DontOpen.NoItOpened.help"
+      "name": "告辞",
+      "help": ""
     }
   },
   "Storage": {

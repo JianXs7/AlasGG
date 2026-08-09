@@ -2685,7 +2685,7 @@
     },
     "RestartEverytime": {
       "name": "每次啟動Alas時重啟",
-      "help": "打開以初始化倍率内容。 如果你沒有手動操作的壞習慣，可以關閉此選項"
+      "help": "啟動 Alas 時重啟 GG 並重置倍率。"
     },
     "RepushLua": {
       "name": "GGHandler.RepushLua.name",
@@ -2729,12 +2729,12 @@
   },
   "DontOpen": {
     "_info": {
-      "name": "DontOpen._info.name",
-      "help": "DontOpen._info.help"
+      "name": "經驗+3",
+      "help": ""
     },
     "NoItOpened": {
-      "name": "DontOpen.NoItOpened.name",
-      "help": "DontOpen.NoItOpened.help"
+      "name": "告辭",
+      "help": ""
     }
   },
   "Storage": {

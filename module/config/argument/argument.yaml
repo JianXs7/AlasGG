@@ -787,7 +787,6 @@ GGHandler:
   AutoRestartGG: false
   RestartEverytime:
     value: true
-    display: disabled
   RepushLua: true
   GGMultiplyingFactor: 200
   Timeout: 120

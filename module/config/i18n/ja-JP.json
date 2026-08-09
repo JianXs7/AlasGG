@@ -2685,7 +2685,7 @@
     },
     "RestartEverytime": {
       "name": "GGHandler.RestartEverytime.name",
-      "help": "GGHandler.RestartEverytime.help"
+      "help": "Alas起動時にGGを再起動し倍率をリセットします。"
     },
     "RepushLua": {
       "name": "GGHandler.RepushLua.name",
@@ -2729,12 +2729,12 @@
   },
   "DontOpen": {
     "_info": {
-      "name": "DontOpen._info.name",
-      "help": "DontOpen._info.help"
+      "name": "経験値+3",
+      "help": ""
     },
     "NoItOpened": {
-      "name": "DontOpen.NoItOpened.name",
-      "help": "DontOpen.NoItOpened.help"
+      "name": "このタスクをスキップ",
+      "help": ""
     }
   },
   "Storage": {

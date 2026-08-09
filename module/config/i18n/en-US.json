@@ -2685,7 +2685,7 @@
     },
     "RestartEverytime": {
       "name": "Restart Everytime Alas starts",
-      "help": "For sake of safety"
+      "help": "Restart GG and reset multiplier when Alas starts."
     },
     "RepushLua": {
       "name": "GGHandler.RepushLua.name",
@@ -2729,12 +2729,12 @@
   },
   "DontOpen": {
     "_info": {
-      "name": "DontOpen._info.name",
-      "help": "DontOpen._info.help"
+      "name": "Don't Do It",
+      "help": ""
     },
     "NoItOpened": {
-      "name": "DontOpen.NoItOpened.name",
-      "help": "DontOpen.NoItOpened.help"
+      "name": "Skip this task",
+      "help": ""
     }
   },
   "Storage": {
