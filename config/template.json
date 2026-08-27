@@ -1950,8 +1950,8 @@
     },
     "IslandProduction": {
       "HardFloorItems": "{}",
-      "ReserveItems": "{}",
       "DailyBufferItems": "{}",
+      "ManualBufferItems": "{}",
       "IdleAccumulatingItems": "{}"
     },
     "Storage": {
